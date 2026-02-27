@@ -2,55 +2,61 @@ package com.example;
 
 public class Product {
 
-    //atributos
+    //  ATRIBUTOS 
     private String id;
     private String name;
     private double price;
     private int stock;
 
-    //Metodo getter
-
-    public String getid() {
-        return id;
-    }
-
-    public String getname() {
-        return name;
-    }
-
-    public double getprice() {
-        return price;
-    }
-
-    public int getstock() {
-        return stock;
-    }
-
-    //Metodo setter
-
-    public void setname(String name) {
-        this.name = name;
-    }
-
-    public void setid(String id) {
+    //  CONSTRUCTOR 
+    public Product(String id, String name, double price, int stock) {
         this.id = id;
-    }
-
-    public void setprice(double price) {
+        this.name = name;
         this.price = price;
-    }
-    public void setstock(int stock) {
         this.stock = stock;
     }
 
-
-    //metodo ToString
-
-    @Override
-    public String toString() {
-        return "Product [id=" + id + ", name=" + name + ", price=" + price + ", stock=" + stock + "]";
+    //  GETTERS 
+    public String getId() {
+        return id;
     }
 
+    public String getName() {
+        return name;
+    }
 
+    public double getPrice() {
+        return price;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    //  SETTERS
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    // MÉTODO toString 
     
+    public String toString() {
+        return "Producto [ID: " + id +
+               ", Nombre: " + name +
+               ", Precio: " + price +
+               ", Stock: " + stock + "]";
+    }
+
 }
