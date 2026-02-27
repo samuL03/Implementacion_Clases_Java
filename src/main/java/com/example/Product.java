@@ -1,11 +1,14 @@
 package com.example;
 
 public class Product {
+
+    //atributos
     private String id;
     private String name;
     private double price;
     private int stock;
 
+    //Metodo getter
 
     public String getid() {
         return id;
@@ -23,6 +26,8 @@ public class Product {
         return stock;
     }
 
+    //Metodo setter
+
     public void setname(String name) {
         this.name = name;
     }
@@ -37,6 +42,9 @@ public class Product {
     public void setstock(int stock) {
         this.stock = stock;
     }
+
+
+    //metodo ToString
 
     @Override
     public String toString() {
